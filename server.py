@@ -2,7 +2,7 @@ import os
 import socket
 import threading 
 
-IP = "192.168.236.188"
+IP = socket.gethostbyname(socket.gethostname())
 PORT = 4999
 ADDR = (IP, PORT)
 SIZE = 1024
@@ -28,9 +28,6 @@ def handle_client(conn,addr):
             data=conn.recv(SIZE)
             f.write(data)
             print("file recieved")
-
-def qrcode():
-    pass
 
 def main():
     print("[STARTING] Server is starting")

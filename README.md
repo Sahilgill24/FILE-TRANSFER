@@ -33,11 +33,15 @@ Start the  flask server (QR code functionality)
 ```
 
 To run the server
+open your terminal 
 ```bash
+  cd my-project
   python3 server.py 
 ```
 To run the client 
+open another terminal window 
 ```bash
+  cd my-project
   python3 client.py 
 ```
 
